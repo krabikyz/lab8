@@ -54,13 +54,13 @@ Manager.prototype.getSalary = function() {
       countedSalary  = countedSalary  + 300;
     }
 
-    let facSlaves = 0;
+        let wor = 0;
     for(key in this.team){
       if(this.team[key] instanceof Developer ){
-        facSlaves++;
+        wor++;
       }
     }
-    if (facSlaves > (this.team.length / 2)) {
+    if (wor > (this.team.length / 2)) {
       countedSalary   *= 1.1;
     }
     return countedSalary ;
